@@ -1,15 +1,17 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
-
-const Header = (props) => {
+import './Header.css';
+const Header = () => {
     return (
         <header>
-            <Navbar bg="dark" variant="dark">
+            <Navbar id="nav" variant="dark">
                 <Navbar.Brand href="/">App</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/">
+                            <img src="/assets/img/bootstrap.svg" alt="" width="32" height="32" title="Bootstrap" />
+                        </Nav.Link>
                         <Nav.Link href="#link">Link</Nav.Link>
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

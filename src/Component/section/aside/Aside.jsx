@@ -1,8 +1,8 @@
 import React from 'react';
 import { Nav } from "react-bootstrap";
-import PropTypes from 'prop-types';
+// eslint-disable-next-line
 
-const Aside = (props) => {
+const Aside = () => {
     return (
         <Nav className="col-md-12 d-none d-md-block bg-light sidebar"
             activeKey="/home"

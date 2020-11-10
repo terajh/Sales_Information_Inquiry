@@ -1,12 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Aside from './aside/Aside';
 import Content from './content/Content';
 
-import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
-
-const Section = (props) => {
+import { Container, Row, Col } from "react-bootstrap";
+const Section = () => {
     return (
         <>
             <Container fluid>
