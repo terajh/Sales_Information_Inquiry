@@ -1,0 +1,38 @@
+#img_fn_list_panel {
+    margin: 10px;
+}
+
+#project_info_panel {
+
+}
+
+#project_tools_panel{
+
+}
+
+#project_info_panel .col {
+    display: table-cell;
+    padding: 0.4rem 0.1rem;
+    border: none;
+    margin-left: 14px;
+}
+#filelist_preset_filters_list {
+    width:40%;
+}
+
+#project_info_panel .col input[type="text"] {
+    font-size: 0.8rem;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    margin: 0;
+    background-color: darkgrey;
+    border-radius: 3px;
+}
+
+input[type="text"] {
+    border: 1px solid #cccccc;
+    margin: 0.6rem 0;
+    padding: 0.2rem 0.4rem;
+    background-color: darkgrey;
+    border-radius: 3px;
+}

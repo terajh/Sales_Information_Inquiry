@@ -8,7 +8,8 @@ router.get('/', (req,res)=>{
     res.send({title:'hello react!'});
     // client 와의 소통
 });
-router.get('/get_image', (req,res) => {
+router.post('/get_image', (req,res) => {
+    console.log(req);
     console.log('get image api');
     try{
         fs.readFile(path.join(__dirname, '../public/images/poster_1.jpg'), (err,data) => {
