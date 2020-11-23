@@ -9,9 +9,13 @@
   <meta name="description" content="Web site created using create-react-app" />
   <!-- <link rel="manifest" href="./style/dropzone.css" /> -->
   <link rel="stylesheet" href="./style/dropzone.css" />
+  <link rel="stylesheet" href="./style/slider.css" />
+
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <script type="text/javascript" src="./javascript/image_upload.js"></script>
   <script type="text/javascript" src="./javascript/dropzone.js"></script>
+
   <title>React App</title>
 </head>
 
@@ -32,20 +36,21 @@
       parallelUploads: 99,
       maxFilesize: 10, // MB
       uploadMultiple: true,
+
       init: function () {
         var myDropzone = this;
-        this.on("sending", function (file, xhr, formData) {
+        this.on("sending", (file, xhr, formData) => {
           // $("input[name='cardname']").val();
           let cardName = 'test';
           formData.append("name", cardName);
         });
 
-        this.on("queuecomplete", function (file) {
+        this.on("queuecomplete", (file) => {
           debugger;
           console.log(file);
           document.location.href = "http://localhost:3000/" //업로드가 완료되었다면 이전 화면으로 이동
         });
-        this.on("addedfile", function (file) { //중복된 파일의 제거 
+        this.on("addedfile",  (file) => { //중복된 파일의 제거 
           if (this.files.length) {
             // -1 to exclude current file
             var hasFile = false;
@@ -63,6 +68,10 @@
             addedFiles.push(file);
           }
         });
+        this.on("drop", (file) => {
+          console.log("wow drop!!");
+          console.log(file);
+        })
 
 
         $('#btn_confirm').click(function (e) {

@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Component/header/Header';
-import Section from './Component/section/Section';
+import Header from './Component/header';
+import Section from './Component/section';
 // eslint-disable-next-line
 class App extends React.Component {
   constructor(props){

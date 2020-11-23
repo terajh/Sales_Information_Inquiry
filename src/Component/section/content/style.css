@@ -3,7 +3,8 @@
     border : 1px solid skyblue;
 }
 .dropzone, .outerDropzone, .formfield {
-    height:98%
+    height:98%;
+    width: 100%;
 }
 #upload_image {
     margin-top: 22%;
@@ -11,6 +12,11 @@
     height: 114px;
     color: skyblue;
     cursor: pointer;
+}
+
+#dropzone_form {
+    width: 70%;
+    margin-left: 20px;
 }
 
 .dz-button {
