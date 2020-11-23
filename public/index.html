@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <!-- <link rel="manifest" href="./style/dropzone.css" /> -->
+  <link rel="stylesheet" href="./style/dropzone.css" />
+  <link rel="stylesheet" href="./style/slider.css" />
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="./javascript/image_upload.js"></script>
+  <script type="text/javascript" src="./javascript/dropzone.js"></script>
+
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+<script>
+  //fileDropzone dropzone 설정할 태그의 id로 지정 
+  Dropzone.autoDiscover = false;
+  var addedFiles = [];
+  $(document).ready(function () {
+    $('#my-dropzone').dropzone({
+      url: 'http://localhost:3001/api/get_image',
+      method: 'post',
+      autoProcessQueue: false,
+      paramName: 'files',
+      parallelUploads: 99,
+      maxFilesize: 10, // MB
+      uploadMultiple: true,
+
+      init: function () {
+        var myDropzone = this;
+        this.on("sending", (file, xhr, formData) => {
+          // $("input[name='cardname']").val();
+          let cardName = 'test';
+          formData.append("name", cardName);
+        });
+
+        this.on("queuecomplete", (file) => {
+          debugger;
+          console.log(file);
+          document.location.href = "http://localhost:3000/" //업로드가 완료되었다면 이전 화면으로 이동
+        });
+        this.on("addedfile",  (file) => { //중복된 파일의 제거 
+          if (this.files.length) {
+            // -1 to exclude current file
+            var hasFile = false;
+            for (var i = 0; i < this.files.length - 1; i++) {
+              if (this.files[i].name === file.name && this.files[i].size === file.size &&
+                this.files[i].lastModifiedDate.toString() === file.lastModifiedDate.toString()) {
+                hasFile = true;
+                this.removeFile(file);
+              }
+            }
+            if (!hasFile) {
+              addedFiles.push(file);
+            }
+          } else {
+            addedFiles.push(file);
+          }
+        });
+        this.on("drop", (file) => {
+          console.log("wow drop!!");
+          console.log(file);
+        })
+
+
+        $('#btn_confirm').click(function (e) {
+          // let cardName = $("input[name='cardname']").val();
+          // if (cardName.length == 0) {
+          //   alert('카드제목 입력 필요')
+          //   return;
+          // }
+          if (myDropzone.getRejectedFiles().length > 0) {
+            let files = myDropzone.getRejectedFiles();
+            alert('거부된 파일이 있습니다.', files)
+            return;
+          }
+
+          e.preventDefault();
+          e.stopPropagation();
+
+          myDropzone.processQueue();
+        })
+      }
+    });
+  });
+</script>
+
+
+
+</script>
+
+</html>
