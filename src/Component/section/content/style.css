@@ -13,10 +13,15 @@
     color: skyblue;
     cursor: pointer;
 }
-
-#dropzone_form {
-    width: 70%;
+#img_upload {
+    width: 58.5%;
+    height: 830px;
     margin-left: 20px;
+    text-align: center;
+    padding:20px;
+}
+#jsCanvas{
+    margin-top: 30px;
 }
 
 .dz-button {

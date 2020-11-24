@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Component/header';
-import Section from './Component/section';
+import Header from './component/header';
+import Section from './component/section';
 // eslint-disable-next-line
 class App extends React.Component {
   constructor(props){
@@ -11,12 +11,11 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3001/api/')
-      .then(res => res.json())
-      .then(data => this.setState({title: data.title}));
+    // fetch('http://localhost:3001/api/')
+    //   .then(res => res.json())
+    //   .then(data => this.setState({title: data.title}));
   
   }
-
   render() {
     return(
       <div className="all">

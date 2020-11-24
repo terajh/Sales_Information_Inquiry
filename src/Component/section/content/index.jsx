@@ -4,19 +4,16 @@ const Content = () => {
     // eslint-disable-next-line
     const [url, seturl] = useState(0);
     useEffect(() => {
-        
     })
     return (
-        <>
-            <form id="dropzone_form" className="outerDropzone well" action="http://localhost:3001/api/get_image" method="post">
-                <div className="formfield">
-                    <div id="my-dropzone" className="dropzone" name="images">
-                    </div>
-                </div>
-                <button id="btn_confirm" className="display_none"></button>
-            </form>
-            
-        </>
+        <div className="well" id="img_upload">
+            <div className="img_upload">
+                <input type="file" id="real-input" className="input-btn" accept="img/*" required multiple />
+                <button className="browse-btn" style={{display:'none'}}>Image Upload</button>
+            </div>
+
+            <canvas id="jsCanvas" className="canvas" width="1080" height="730"></canvas>
+        </div>
     )
 }
 

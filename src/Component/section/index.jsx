@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css'
 import Content from './content';
 import Aside from './aside';
+import Detail from './detail';
 
 import { Container, Row, Col } from "react-bootstrap";
 const Section = () => {
@@ -11,7 +12,7 @@ const Section = () => {
                 <Aside></Aside>
 
                 <Content />
-
+                <Detail></Detail>
             </Row>
         </div>
     )
