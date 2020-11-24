@@ -17,6 +17,9 @@ body {
   background-color: transparent;
 }
 
+.display_none {
+  display:none;
+}
 #root {
   height:100%;
 }

@@ -24,6 +24,9 @@ canvas {
     height: 125px;
 
 }
+.face_canvas_select {
+    border: 3px solid red;
+}
 #select_mozaic_human {
     overflow-y: scroll;
     height: 720px;
@@ -32,9 +35,9 @@ canvas {
     float:left;
 }
 
-.face_div input {
+/* .face_div input {
     display: block;
-}
+} */
 
 .well {
     min-height: 20px;

@@ -98,9 +98,10 @@
                 face_div.className = "face_div";
 
                 var check_face = document.createElement('input');
-                check_face.className = "check_face";
+                check_face.className = "check_face display_none";
                 check_face.id = "radio" + i.toString();
                 check_face.type = "radio";
+
 
 
                 var face_canvas = document.createElement('canvas');
@@ -122,6 +123,8 @@
                 face_canvas.addEventListener('click', (e) => {
                   var img = new Image(); // 이미지 객체를 생성하고
                   if ($('#radio' + e.target.id.split('canvas')[1]).attr('check') === 'true') {
+                    $('#' + e.target.id).toggleClass('face_canvas_select');
+
                     $('#radio' + e.target.id.split('canvas')[1]).prop('checked', false);
                     $('#radio' + e.target.id.split('canvas')[1]).attr('check', false);
                     let _cv = document.querySelector('#'+e.target.id);
@@ -133,6 +136,7 @@
                     ctx.drawImage(_ct.canvas, 0, 0, _ct.canvas.width, _ct.canvas.height, tx, ty, tdx, tdy);
                     return;
                   }
+                  $('#' + e.target.id).toggleClass('face_canvas_select');
                   $('#radio' + e.target.id.split('canvas')[1]).prop('checked', true);
                   $('#radio' + e.target.id.split('canvas')[1]).attr('check', true);
 
@@ -162,6 +166,7 @@
                 if ($('#' + e.target.id).attr('check') === "true") {
                   $('#' + e.target.id).prop('checked', false);
                   $('#' + e.target.id).attr('check', false);
+                  $('#canvas' + e.target.id.split('radio')[1]).toggleClass('face_canvas_select');
 
                   let _cv = document.querySelector('#canvas' + e.target.id.split('radio')[1]);
                   let _ct = _cv.getContext('2d');
@@ -175,6 +180,7 @@
                 else {
                   $('#' + e.target.id).prop('checked', true);
                   $('#' + e.target.id).attr('check', true);
+                  $('#canvas' + e.target.id.split('radio')[1]).toggleClass('face_canvas_select');
                 }
               });
               $('.check_all').click(() => {

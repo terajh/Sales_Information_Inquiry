@@ -10,8 +10,6 @@ const Detail = () => {
                 <form className="form-inline">
                     <div className="control-group">
                         <legend>Face Detection</legend>
-                        <label style={{float:'left'}}>check all</label>
-                        <input className='check_all' type="radio" style={{marginLeft:10+"px"}}  />
                     </div>
                 </form>
                 <div id="select_mozaic_human">
