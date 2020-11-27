@@ -7,7 +7,7 @@ const Aside = () => {
     return (
         <div className="span4">
             <div id="toolbar" className="well">
-                <form className="form-inline">
+                <form className="form-in">
                     <div className="control-group">
                         <legend>Mozaic Control</legend>
 

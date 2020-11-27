@@ -8,13 +8,13 @@ import { Container, Row, Col } from "react-bootstrap";
 const Section = () => {
     return (
         <div className="main_body">
-            <Row>
+            <div className='rows' >
                 <Aside></Aside>
 
                 <Content />
                 <Detail></Detail>
                 <div className="modal"></div>
-            </Row>
+            </div>
         </div>
     )
 }

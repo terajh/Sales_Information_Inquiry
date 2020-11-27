@@ -7,8 +7,8 @@ input[type="text"] {
     border-radius: 3px;
 }
 #detail {
-    height: 831px;
-    width: 365px;
+    height: 100%;
+    width: 100%;
     padding:25px;
 }
 canvas {
@@ -85,6 +85,7 @@ legend {
     float: left;
     min-height: 1px;
     margin-left: 20px;
+    width:19.3%;
 }
 .btn {
     margin-right: 7px;
