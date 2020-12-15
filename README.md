@@ -1,47 +1,33 @@
 # Face Mozaic
 
-## [프로젝트 주제 선정 동기]
+![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled.png)
 
-![FaceMosaic/Untitled.png](FaceMosaic/Untitled.png)
+## [Dataset]
 
----
+마스크 낀 사람과 안 낀 사람 모두 detection 해야 하기 때문에 모든 종류의 dataset 이 필요
 
-![FaceMosaic/Untitled%201.png](FaceMosaic/Untitled%201.png)
-
----
-
-![FaceMosaic/Untitled%202.png](FaceMosaic/Untitled%202.png)
-
----
-
-![FaceMosaic/Untitled%203.png](FaceMosaic/Untitled%203.png)
-
----
-
-![FaceMosaic/Untitled%204.png](FaceMosaic/Untitled%204.png)
+- [https://www.kaggle.com/andrewmvd/face-mask-detection](https://www.kaggle.com/andrewmvd/face-mask-detection)
 
 ## [기능 구성]
 
-![FaceMosaic/Untitled%205.png](FaceMosaic/Untitled%205.png)
+다음 그림과 총 4개의 기능을 가지고 있다. 
+
+![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%201.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%201.png)
 
 ---
 
-![FaceMosaic/Untitled%206.png](FaceMosaic/Untitled%206.png)
+![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%202.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%202.png)
 
-![FaceMosaic/Untitled%207.png](FaceMosaic/Untitled%207.png)
+![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%203.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%203.png)
 
-![FaceMosaic/Untitled%208.png](FaceMosaic/Untitled%208.png)
+![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%204.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%204.png)
 
-![FaceMosaic/Untitled%209.png](FaceMosaic/Untitled%209.png)
-
-## [기대 효과]
-
-![FaceMosaic/Untitled%2010.png](FaceMosaic/Untitled%2010.png)
+![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%205.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%205.png)
 
 ## [개발 스택]
 
-![FaceMosaic/Untitled%2011.png](FaceMosaic/Untitled%2011.png)
+![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%206.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%206.png)
 
-# ⇒ 파일 첨부
+### ⇒ 파일 첨부
 
-[FaceMosaic/_.pdf](FaceMosaic/_.pdf)
+[Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/_.pdf](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/_.pdf)
