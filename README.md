@@ -1,6 +1,6 @@
 # Face Mozaic
 
-![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled.png)
+![FaceMozaic/Untitled.png](FaceMozaic/Untitled.png)
 
 ## [Dataset]
 
@@ -12,22 +12,22 @@
 
 다음 그림과 총 4개의 기능을 가지고 있다. 
 
-![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%201.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%201.png)
+![FaceMozaic/Untitled%201.png](FaceMozaic/Untitled%201.png)
 
 ---
 
-![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%202.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%202.png)
+![FaceMozaic/Untitled%202.png](FaceMozaic/Untitled%202.png)
 
-![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%203.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%203.png)
+![FaceMozaic/Untitled%203.png](FaceMozaic/Untitled%203.png)
 
-![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%204.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%204.png)
+![FaceMozaic/Untitled%204.png](FaceMozaic/Untitled%204.png)
 
-![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%205.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%205.png)
+![FaceMozaic/Untitled%205.png](FaceMozaic/Untitled%205.png)
 
 ## [개발 스택]
 
-![Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%206.png](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/Untitled%206.png)
+![FaceMozaic/Untitled%206.png](FaceMozaic/Untitled%206.png)
 
 ### ⇒ 파일 첨부
 
-[Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/_.pdf](Face%20Mozaic%204c48c59b60e84967a2339b5ed1d92bde/_.pdf)
+[FaceMozaic/_.pdf](FaceMozaic/_.pdf)
